@@ -1,0 +1,8 @@
+theme = ""
+
+repeat = "One"
+
+shuffle = true
+[spotify]
+client_id = "a6e75276e5d14c7f87612326cacd9c2e"
+bitrate = 320

@@ -1,0 +1,10 @@
+[[track]]
+path = "https://jensen.nl/podcast.xml"
+title = "Jensen Podcast"
+feed = true
+
+[[track]]
+path = "https://feeds.noagendaassets.com/noagenda.xml"
+title = "No Agenda"
+feed = true
+

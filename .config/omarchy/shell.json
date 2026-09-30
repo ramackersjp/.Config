@@ -1,0 +1,89 @@
+{
+  "bar": {
+    "centerAnchor": "omarchy.clock",
+    "id": "jp.bar",
+    "layout": {
+      "center": [
+        {
+          "id": "omarchy.indicators"
+        },
+        {
+          "id": "omarchy.keyboard-layout"
+        },
+        {
+          "id": "omarchy.clock",
+          "format": "dddd HH:mm",
+          "formatAlt": "d MMMM 'W'ww yyyy",
+          "verticalFormat": "HH\n—\nmm"
+        },
+        {
+          "id": "caio.omarchy-notify"
+        },
+        {
+          "id": "omarchy.system-update"
+        },
+        {
+          "id": "viniciusfnery.github-inbox"
+        },
+        {
+          "id": "omarchy.weather"
+        }
+      ],
+      "left": [
+        {
+          "id": "jp.archmenu"
+        },
+        {
+          "id": "omarchy.workspaces"
+        }
+      ],
+      "right": [
+        {
+          "id": "omarchy.tray"
+        },
+        {
+          "id": "io.github.sudoapwh.readout"
+        },
+        {
+          "id": "omarchy.agents"
+        },
+        {
+          "id": "omarchy.bluetooth"
+        },
+        {
+          "id": "omarchy.network"
+        },
+        {
+          "id": "omarchy.audio"
+        },
+        {
+          "id": "omarchy.monitor"
+        },
+        {
+          "id": "omarchy.power"
+        },
+        {
+          "id": "jankeesvw.text-transform"
+        },
+        {
+          "id": "io.github.ramackersjp.agenttalk"
+        },
+        {
+          "id": "jp.taxiprijs"
+        }
+      ]
+    },
+    "position": "top",
+    "transparent": false
+  },
+  "idle": {
+    "lock": 0,
+    "screensaver": 0
+  },
+  "plugins": [
+    {
+      "id": "io.github.ramackersjp.benagent"
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "quattro.analogclock",
+  "name": "Analog Clock",
+  "version": "1.0.0",
+  "author": "jp",
+  "license": "MIT",
+  "description": "A stylish analog clock widget for the Omarchy Quattro bar.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Widget.qml"
+  },
+  "barWidget": {
+    "displayName": "Analog Clock",
+    "description": "Real-time analog clock with hour, minute, and second hands, hour markers, and smooth animations.",
+    "category": "System",
+    "aliases": [
+      "clock",
+      "time",
+      "analog"
+    ],
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "showSeconds": true,
+      "smoothSeconds": true
+    },
+    "schema": [
+      {
+        "key": "showSeconds",
+        "type": "boolean",
+        "label": "Show second hand",
+        "defaultValue": true
+      },
+      {
+        "key": "smoothSeconds",
+        "type": "boolean",
+        "label": "Smooth second hand animation",
+        "defaultValue": true
+      }
+    ]
+  }
+}

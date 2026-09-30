@@ -1,0 +1,17 @@
+[Unit]
+Description=YaCy Search Engine
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=forking
+WorkingDirectory=/home/jp/yacy_search_server
+ExecStart=/home/jp/yacy_search_server/startYACY.sh --logging
+ExecStop=/home/jp/yacy_search_server/stopYACY.sh
+PIDFile=/home/jp/yacy_search_server/yacy.pid
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=30
+
+[Install]
+WantedBy=default.target

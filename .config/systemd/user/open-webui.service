@@ -1,0 +1,13 @@
+[Unit]
+Description=Open WebUI
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h
+ExecStart=%h/.venv/bin/open-webui serve --port 3001
+Restart=always
+Environment=PATH=%h/.venv/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=default.target

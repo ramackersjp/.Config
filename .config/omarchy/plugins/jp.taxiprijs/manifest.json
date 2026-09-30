@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "jp.taxiprijs",
+  "name": "TaxiCheck",
+  "version": "2.0.1",
+  "author": "JP",
+  "license": "MIT",
+  "description": "Taxi fare calculator with OSRM routing and TUI interface",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "TaxiCheck",
+    "category": "Utilities",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}

@@ -1,0 +1,32 @@
+# Cyberpunk Neon palette for Aether / Omarchy v4.
+mode = "dark"
+
+accent = "#ff2d78"
+selection = "#ff2d78"
+muted = "#2a2a40"
+
+background = "#0a0a14"
+dark_background = "#060610"
+darker_background = "#030308"
+lighter_background = "#16162a"
+
+foreground = "#c8d6f0"
+dark_foreground = "#7888a8"
+light_foreground = "#dce5fa"
+bright_foreground = "#e8eefc"
+
+red = "#ff3366"
+yellow = "#ffd866"
+orange = "#ff6b9d"
+green = "#7dffb3"
+cyan = "#00e5ff"
+blue = "#4d8bff"
+magenta = "#d946ef"
+brown = "#935e6d"
+
+bright_red = "#ff3366"
+bright_yellow = "#ffd866"
+bright_green = "#7dffb3"
+bright_cyan = "#00e5ff"
+bright_blue = "#4d8bff"
+bright_magenta = "#d946ef"

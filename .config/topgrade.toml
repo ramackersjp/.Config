@@ -1,0 +1,79 @@
+[misc]
+pre_sudo = true
+sudo_loop = true
+cleanup = true
+assume_yes = true
+ask_retry = false
+auto_retry = 1
+notify_end = "on_failure"
+show_distribution_summary = true
+
+# mise: installed as the AUR `mise-bin` package, so topgrade's built-in mise step
+# fails on `mise self-update` (and aborts before `mise upgrade` runs). The custom
+# command below does the tool upgrades instead; mise itself is kept current by yay.
+disable = ["pi", "mise", "self_update"]
+
+first = ["custom_commands"]
+last = ["containers"]
+
+[commands]
+"01 Omarchy update" = "bash -lc 'command -v omarchy-update >/dev/null && omarchy-update || true'"
+
+"02 Docker Compose update" = '''
+bash -lc '
+for d in "$HOME/gitea" "$HOME/docker" "$HOME/containers"; do
+  if [ -f "$d/docker-compose.yml" ] || [ -f "$d/compose.yml" ] || [ -f "$d/compose.yaml" ]; then
+    echo "Updating compose project: $d"
+    cd "$d" || continue
+    docker compose pull
+    docker compose up -d --remove-orphans
+  fi
+done
+'
+'''
+
+"03 Docker cleanup" = "docker image prune -f && docker builder prune -f"
+
+"04 mise tools" = '''
+bash -lc 'mise plugins update && mise upgrade --yes --jobs 4'
+'''
+
+[linux]
+arch_package_manager = "yay"
+yay_arguments = "--devel --sudoloop --noconfirm"
+show_arch_news = true
+
+[containers]
+runtime = "docker"
+use_sudo = false
+system_prune = true
+
+[firmware]
+upgrade = true
+
+[mandb]
+enable = true
+
+[pkgfile]
+enable = true
+
+[git]
+max_concurrency = 5
+arguments = "--rebase --autostash"
+# $HOME itself is a git repo (dotfiles), so every predefined repo check
+# (~/.config/nvim, fish, zshrc...) resolves to /home/jp via rev-parse.
+# Don't let topgrade pull the whole home directory.
+pull_predefined = false
+
+[mise]
+bump = false
+jobs = 4
+
+[npm]
+use_sudo = false
+
+[cargo]
+git = true
+
+[rustup]
+channels = ["stable"]

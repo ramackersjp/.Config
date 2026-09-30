@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "jp.archmenu",
+  "name": "Arch Menu",
+  "version": "1.0.0",
+  "author": "JP",
+  "description": "Arch logo bar button that opens the Omarchy menu",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Arch Menu",
+    "category": "Compositor",
+    "allowMultiple": false
+  }
+}

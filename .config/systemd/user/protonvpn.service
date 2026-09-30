@@ -1,0 +1,11 @@
+[Unit]
+Description=ProtonVPN auto-connect
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/bin/protonvpn connect --fastest
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,9 @@
+# Machine-level Omarchy shell overrides, layered on top of the active theme.
+# Watched live by the shell (no restart needed for these).
+
+# No [bar] colours here on purpose: they override the active theme, which is
+# why the topbar kept its old colours after a theme change.
+
+[font]
+# rem root for the type scale; slightly larger bar text and bar icons.
+base-size = 13
