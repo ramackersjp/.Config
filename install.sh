@@ -6,7 +6,7 @@
 set -euo pipefail
 
 DOTDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-BACKUP_DIR="$HOME/.Dot.backup.$(date +%Y%m%d-%H%M%S)"
+BACKUP_DIR="$HOME/.Config.backup.$(date +%Y%m%d-%H%M%S)"
 
 info() { printf '\033[1;34m::\033[0m %s\n' "$*"; }
 ok()   { printf '\033[1;32m==>\033[0m %s\n' "$*"; }
