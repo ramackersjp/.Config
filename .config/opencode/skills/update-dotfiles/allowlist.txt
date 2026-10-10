@@ -1,0 +1,27 @@
+# Dotfiles allowlist (relative to /home/jp/.config/)
+# Approved by the user on 2026-10-10 during "Update dotfiles" invocation.
+aether/theme.override.css
+aether/theme/backgrounds/cyberpunk-nissan-180sx.960x540.mp4
+elephant/menus/omarchy_themes.lua
+hypr/bindings.conf
+hypr/bindings.lua
+hypr/looknfeel.lua
+hypr/monitors.lua
+hypr/windows.lua
+hypr/shaders
+kitty/kitty.conf
+nvim/lazy-lock.json
+omarchy/backgrounds
+omarchy/hooks/theme-set.d/update-hypr-borders.sh
+omarchy/plugins/io.github.ramackersjp.benagent
+omarchy/shell.json
+opencode/AGENTS.md
+opencode/opencode.json
+opencode/skills
+opencode/tui.json
+systemd/user/benagent-avatar.service
+systemd/user/benagent.service
+systemd/user/benagent-web.service
+systemd/user/default.target.wants/benagent-web.service
+systemd/user/dropbox.service.d
+systemd/user/graphical-session.target.wants/benagent-avatar.service

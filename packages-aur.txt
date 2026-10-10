@@ -1,5 +1,6 @@
 dooit
 dooit-extras
+flea-bin
 goxlr-utility
 goxlr-utility-ui
 ledger-live-bin
@@ -10,8 +11,8 @@ mullvad-vpn-daemon-bin
 nanominer
 neovim-tree-lua-git
 pyorganize
-python-sabctools
 python311
+python-sabctools
 sabnzbd
 topgrade-bin
 vidman-git

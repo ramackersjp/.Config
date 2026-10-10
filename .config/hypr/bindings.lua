@@ -33,7 +33,14 @@ o.bind("ALT + SPACE", "Omarchy menu", "omarchy-menu toggle")
 
 
 
--- >>> benagent SUPER+B (managed)
-hl.unbind("SUPER + B")
-o.bind("SUPER + B", "Ben voice agent", "omarchy-shell shell toggle io.github.ramackersjp.benagent")
--- <<< benagent SUPER+B
+
+-- flea --default: begin. Written by `flea --default`; `flea --default off` removes the block whole.
+hl.unbind("SUPER + SHIFT + F")
+o.bind("SUPER + SHIFT + F", "File manager", { launch = 'flea --gui' })
+hl.unbind("SUPER + ALT + SHIFT + F")
+o.bind("SUPER + ALT + SHIFT + F", "File manager (cwd)", { launch = 'flea --gui "$(omarchy-cmd-terminal-cwd)"' })
+-- flea --default: end.
+
+-- flea --picker: begin. Written by `flea --picker`; `flea --picker off` removes the block whole.
+o.window("com.thisisgm.flea.picker", { tag = "+floating-window" })
+-- flea --picker: end.

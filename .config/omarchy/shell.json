@@ -17,10 +17,10 @@
           "verticalFormat": "HH\n—\nmm"
         },
         {
-          "id": "caio.omarchy-notify"
+          "id": "omarchy.system-update"
         },
         {
-          "id": "omarchy.system-update"
+          "id": "caio.omarchy-notify"
         },
         {
           "id": "viniciusfnery.github-inbox"

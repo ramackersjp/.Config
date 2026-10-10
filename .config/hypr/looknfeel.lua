@@ -1,8 +1,8 @@
 -- Change the default Omarchy look'n'feel.
--- Auto-generated from theme: hackerman
+-- Auto-generated from theme: catppuccin
 
-local active_border_color = "rgb(82fb9c)"
-local inactive_border_color = "rgb(2d3450)"
+local active_border_color = "rgb(89b4fa)"
+local inactive_border_color = "rgb(585b70)"
 
 hl.config({
   general = {
