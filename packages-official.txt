@@ -34,6 +34,8 @@ dmidecode
 docker
 docker-buildx
 docker-compose
+dooit
+dooit-extras
 dosfstools
 dotnet-runtime
 dotnet-runtime-9.0
@@ -52,6 +54,7 @@ fcitx5-qt
 fd
 ffmpegthumbnailer
 firefoxpwa
+flea-bin
 fontconfig
 foot
 freerdp
@@ -63,6 +66,8 @@ gnome-disk-utility
 gnome-keyring
 gnome-themes-extra
 go
+goxlr-utility
+goxlr-utility-ui
 gpu-screen-recorder
 grim
 grok-bot
@@ -91,12 +96,14 @@ kernel-modules-hook
 kitty
 lazydocker
 lazygit
+ledger-live-bin
 less
 lib32-nvidia-utils
 libappindicator
 libpulse
 libqalculate
 libreoffice-fresh
+librewolf-bin
 libsecret
 libva-nvidia-driver
 libvips
@@ -122,9 +129,12 @@ moonlight-qt
 mpv
 mpv-mpris
 msmtp
+mullvad-vpn-bin
+nanominer
 nautilus
 nautilus-python
 neovim
+neovim-tree-lua-git
 networkmanager
 ninja
 noto-fonts
@@ -155,6 +165,8 @@ plymouth
 postgresql-libs
 power-profiles-daemon
 pv
+pyorganize
+python311
 python-gobject
 python-poetry-core
 qbittorrent
@@ -167,9 +179,11 @@ quickshell
 ripgrep
 ruby
 rust
+sabnzbd
 sddm
 signal-desktop
 slurp
+snapd
 snapper
 socat
 spotify
@@ -186,6 +200,7 @@ tk
 tldr
 tmux
 tobi-try
+topgrade-bin
 torbrowser-launcher
 tree
 tree-sitter-cli
@@ -202,6 +217,7 @@ umu-launcher
 unzip
 usage
 uwsm
+vidman-git
 virtualbox
 virtualbox-host-dkms
 weechat
@@ -218,6 +234,7 @@ xdg-desktop-portal-hyprland
 xdg-terminal-exec
 xmlstarlet
 xournalpp
+yacy
 yaru-icon-theme
 yay
 ydotool
