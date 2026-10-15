@@ -1,5 +1,7 @@
 # Dotfiles allowlist (relative to /home/jp/.config/)
 # Approved by the user on 2026-10-10 during "Update dotfiles" invocation.
+# Extended on 2026-10-15 (session "Update dotfiles") with the ComfyUI and
+# ollama-normalize-proxy user services, approved by the user.
 aether/theme.override.css
 aether/theme/backgrounds/cyberpunk-nissan-180sx.960x540.mp4
 elephant/menus/omarchy_themes.lua
@@ -22,6 +24,10 @@ opencode/tui.json
 systemd/user/benagent-avatar.service
 systemd/user/benagent.service
 systemd/user/benagent-web.service
+systemd/user/comfyui.service
 systemd/user/default.target.wants/benagent-web.service
+systemd/user/default.target.wants/comfyui.service
+systemd/user/default.target.wants/ollama-normalize-proxy.service
 systemd/user/dropbox.service.d
 systemd/user/graphical-session.target.wants/benagent-avatar.service
+systemd/user/ollama-normalize-proxy.service
