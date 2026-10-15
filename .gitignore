@@ -1,3 +1,11 @@
 # Junk / app runtime state that must never be committed
 .config/Typora/
 **/__pycache__/
+
+# Backup and patch artifacts
+*.bak
+*.bak.*
+*.bak-*
+*~
+*.orig
+*.rej
