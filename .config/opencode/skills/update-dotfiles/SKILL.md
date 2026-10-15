@@ -61,6 +61,10 @@ Exclude all of the following, even if located beneath an approved directory:
 
 Treat filenames and extensions as hints, not as the sole basis for a security decision.
 
+## Always skip benagent
+
+Never copy, stage, commit or push anything related to `benagent`, even if it is listed in the allowlist or already exists in the repository. This covers the benagent plugin directory (`omarchy/plugins/io.github.ramackersjp.*benagent*`) and all benagent user services (`systemd/user/benagent*.service` and their `*.wants` symlinks). If such an entry is found in the allowlist, the destination or the staged changes, remove it and report it instead of committing it.
+
 ## Secret and content checks
 
 Before copying any file:
