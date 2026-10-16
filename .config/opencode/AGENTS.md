@@ -87,3 +87,10 @@ Do not report a task as fully completed while required work remains unfinished. 
 - If automated tests are unavailable, perform the strongest reasonable alternative and disclose the limitation.
 - Do not claim that tests passed if they were not run.
 - Do not perform unrelated changes merely to make validation pass.
+
+### 7. Enforced Debugging & Verification Protocols
+- **Root-cause debugging:** Before any bug fix, MUST complete Phase 1 (root cause investigation) of the systematic debugging process. No symptom-only fixes allowed.
+- **Verification before completion:** Before claiming any status or expressing satisfaction, MUST run the full verification command (fresh, complete) and read all output. No success claims without fresh evidence.
+- **TDD for features/bugfixes:** MUST write a failing test first (RED), then write minimal code to pass (GREEN), then refactor. No production code without a failing test watched.
+- **Alternative execution paths:** For relevant defects, MUST check alternative input routes, shared components, async callbacks, and edge cases (empty input, large input, error conditions, time-outs).
+- **Completion gate:** Must verify every requirement is addressed, relevant tests pass, no regressions, and the full diff is inspected before reporting completion.
